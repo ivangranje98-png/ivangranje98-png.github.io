@@ -9,7 +9,7 @@ Link: https://ivangranje98-png.github.io/
 - **Inicio**: presentación, formación y perfil profesional
 - **Tecnologías**: PHP, HTML, CSS, JavaScript, PostgreSQL, Git/GitHub, Linux y más
 - **Proyectos**: trabajos y prácticas publicados en GitHub
-- **Experiencia**: más de 8 años en ventas y atención al cliente
+- **Experiencia**: más de 10 años en ventas empresarial y atención al cliente
 - **Contacto**: correo electrónico y GitHub
 
 ## Imagen del contenido
