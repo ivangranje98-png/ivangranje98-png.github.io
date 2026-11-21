@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iván Granje — Portafolio</title>
+<meta name="description" content="Portafolio de Iván Granje, estudiante de Análisis de Sistemas. PHP, PostgreSQL, HTML, CSS, JavaScript y Git.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="logo">ivan<span>.</span>granje</div>
+    <div class="nav-row">
+      <nav class="site">
+        <a href="#inicio">Inicio</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="inicio">
+  <div class="wrap hero">
+    <aside class="profile-card">
+      <img class="avatar" src="foto.jpg" alt="Foto de Iván Granje">
+      <h2 class="p-name">Iván Granje</h2>
+      <p class="p-role">Programador junior en formación</p>
+      <ul class="facts">
+        <li><span>Formación</span> Análisis de Sistemas</li>
+        <li><span>Ubicación</span> Ñemby, Paraguay</li>
+        <li><span>También cursa</span> Administración de Empresas</li>
+        <li><span>Experiencia</span> +8 años en ventas</li>
+      </ul>
+      <div class="social">
+        <a href="https://github.com/ivangranje98-png" target="_blank" rel="noopener">GitHub</a>
+        <a href="Curriculo_Ivan_Granje.pdf" target="_blank" rel="noopener">Currículo</a>
+        <a href="#contacto">Email</a>
+        <a href="#contacto">Cel.</a>
+      </div>
+    </aside>
+
+    <div class="hero-main">
+      <div class="kicker">Estudiante de Análisis de Sistemas</div>
+      <h1>Iván Granje</h1>
+      <p class="lead">Estudiante de segundo año, en busca de mi primera oportunidad como programador junior. Desarrollo sistemas web con PHP y bases de datos, y sumo más de 8 años de experiencia en atención al cliente y ventas.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contacto">Contáctame</a>
+        <a class="btn ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+      <div class="code-panel" aria-hidden="true">
+        <div class="bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+        <div class="ln"><span class="kw">class</span> Ivan:</div>
+        <div class="ln">&nbsp;&nbsp;carrera = <span class="str">"Análisis de Sistemas"</span></div>
+        <div class="ln">&nbsp;&nbsp;etapa = <span class="str">"segundo año"</span></div>
+        <div class="ln">&nbsp;&nbsp;stack = [<span class="str">"php"</span>, <span class="str">"postgresql"</span>, <span class="str">"html"</span>,</div>
+        <div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"css"</span>, <span class="str">"javascript"</span>]</div>
+        <div class="ln">&nbsp;&nbsp;versionado = [<span class="str">"git"</span>, <span class="str">"github"</span>]</div>
+        <div class="ln">&nbsp;&nbsp;buscando = <span class="kw">True</span> <span class="cm"># primera oportunidad</span></div>
+        <div class="ln">&nbsp;</div>
+        <div class="ln">&gt;&gt;&gt; ivan.disponibilidad()<span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="section-title">Tecnologías</h2>
+    <p class="section-sub">Las herramientas que uso y sigo aprendiendo.</p>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Desarrollo web</h3>
+        <div class="chips"><span class="chip">PHP</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Base de datos</h3>
+        <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">pgAdmin 4</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Herramientas</h3>
+        <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Linux</span><span class="chip">Windows</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <h2 class="section-title">Proyectos</h2>
+    <p class="section-sub">Código y práctica en GitHub.</p>
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="card-top">
+          <span class="repo-primary">Portafolio personal</span>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        </div>
+        <p>Este sitio: diseño responsive, modo oscuro y publicación en GitHub Pages.</p>
+        <div class="card-links">
+          <a href="https://github.com/ivangranje98-png/ivangranje98-png.github.io" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+      <article class="project-card soon">
+        <div class="card-top">
+          <span class="repo-primary">Próximo proyecto</span>
+          <div class="chips"><span class="chip">PHP</span><span class="chip">PostgreSQL</span></div>
+        </div>
+        <p>Sistema web con PHP y base de datos, en desarrollo. Pronto estará en mi GitHub.</p>
+        <div class="card-links">
+          <a href="https://github.com/ivangranje98-png" target="_blank" rel="noopener">Ver GitHub</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="wrap">
+    <h2 class="section-title">Experiencia</h2>
+    <p class="section-sub">Más de 8 años en ventas: trato con clientes, cobranza y cumplimiento de objetivos.</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-head"><span class="tl-role">Vendedor externo</span><span class="tl-date">Brooklet – Nestlé · Desde marzo de 2022</span></div>
+          <p>Atención a clientes especiales, asesoramiento y venta de productos, cobranza y seguimiento de entregas.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-head"><span class="tl-role">Vendedor</span><span class="tl-date">EMCESA · Oct. 2017 – Abr. 2021</span></div>
+          <p>Atención a clientes mayoristas y minoristas en el sector c-stores, asesoramiento comercial y cumplimiento de objetivos de venta.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-head"><span class="tl-role">Vendedor externo</span><span class="tl-date">A.V. S.A. / Grupo Vierci – Pepsi · Sep. 2016 – Oct. 2017</span></div>
+          <p>Gestión de cartera de clientes, venta de productos y atención de cuentas de mayor tamaño.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site" id="contacto">
+  <div class="wrap">
+    <h2 class="section-title">Hablemos</h2>
+    <p class="section-sub">Disponible para entrevistas y para mi primera oportunidad como programador junior.</p>
+    <div class="contact-list">
+      <a class="contact-item" href="mailto:ivan.granje98@gmail.com" id="email-item">
+        <span class="k">Email</span> ivan.granje98@gmail.com
+      </a>
+      <a class="contact-item" href="tel:+595971664492">
+        <span class="k">Teléfono</span> (0971) 664-492
+      </a>
+      <a class="contact-item" href="https://github.com/ivangranje98-png" target="_blank" rel="noopener">
+        <span class="k">GitHub</span> /ivangranje98-png
+      </a>
+    </div>
+    <p class="copy-note" id="copy-note"></p>
+    <div class="foot-bottom">
+      <span>Iván Granje — Ñemby, Paraguay</span>
+      <span id="year"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
